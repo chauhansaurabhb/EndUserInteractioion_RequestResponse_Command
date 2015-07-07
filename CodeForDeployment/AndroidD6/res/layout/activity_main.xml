@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        
+
+       
+        
+        <EditText
+            android:id="@+id/edit_message"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter ID" >
+             </EditText>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:onClick="sendMessage"
+            android:text="@string/button_send" />
+        
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Display Temp Value"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/button1"
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heater OFF"
+        android:layout_gravity="center"
+        android:onClick="OffHeater" />
+    
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal" >
+
+         <EditText
+             android:id="@+id/edit_temp"
+             android:layout_width="136dp"
+             android:layout_height="wrap_content"
+             android:text="Enter Temp Value" >
+         </EditText>
+     </LinearLayout>
+
+     <Button
+         android:id="@+id/temp"
+         android:layout_width="wrap_content"
+         android:layout_height="72dp"
+         android:onClick="setTemp"
+         android:text="SetTemp" />
+
+</LinearLayout>
